@@ -10,8 +10,6 @@ declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
 
 #[program]
 pub mod credix_task {
-    use crate::instructions::invest_capital::InvestCapital;
-
     use super::*;
 
     pub fn create_capital_call(

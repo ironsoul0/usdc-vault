@@ -2,7 +2,7 @@ use crate::states::{ErrorCode, *};
 use crate::utils::*;
 
 use anchor_lang::prelude::*;
-use anchor_spl::token::{self, Token, TokenAccount, Transfer};
+use anchor_spl::token::{self, TokenAccount, Transfer};
 
 pub fn withdraw_capital(ctx: Context<WithdrawCapital>) -> Result<()> {
     let clock = Clock::get()?;
